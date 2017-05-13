@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<slide android:slideEdge="left">
+        <targets>
+            <target android:excludeId="@id/webView" />
+        </targets>
+    </slide>-->
+    <slide android:slideEdge="left">
+        <targets android:excludeId="@android:id/navigationBarBackground">
+            <target android:targetId="@id/cardView" />
+        </targets>
+    </slide>
+
+    <changeClipBounds />
+
+
+    <changeImageTransform>
+        <targets>
+            <target android:targetId="@id/iv_title" />
+        </targets>
+    </changeImageTransform>
+
+    <arcMotion
+        android:maximumAngle="90"
+        android:minimumHorizontalAngle="90"
+        android:minimumVerticalAngle="0" />
+</transitionSet>
